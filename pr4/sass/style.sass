@@ -1,0 +1,413 @@
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+ul
+    ol
+    li
+            list-style: none
+
+html
+    body
+        font-family: 'Myriad Pro', sans-serif
+        background: url(../img/fon1.png) no-repeat
+        background-size: 100%
+
+button
+    cursor: pointer
+    
+img
+    vertical-align: top
+
+@mixin flex-center
+    display: flex   
+    align-items: center
+    justify-content: center
+
+.promo
+    width: 100%
+    height: 56px
+    background-color: rgba(0, 0, 0, 0.41)
+    position: relative
+
+.container
+    max-width: 1455px
+    margin: 0 auto
+
+.header
+    display: flex
+    justify-content: center
+    justify-content: space-between
+    align-items: center
+    height: 56px
+    &__text
+        color: #fff
+        font-family: Verdana
+        font-size: 20px
+        font-weight: 700
+        z-index: 9999
+    &__text:hover
+        color:#3cb878
+    &__icons
+        display: flex
+        margin-left: auto
+        padding: 0 26px 0 0px
+        width: 149px
+        height: 20px
+        justify-content: space-between
+    &__icon
+        cursor: pointer
+    &__icon:hover
+        color: #3cb878
+    &__line
+        width: 1px
+        height: 19px
+        background: #1c1c1b
+        opacity: 1
+    &__login
+        color: #ffffff
+        font-family: Verdana
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        padding: 0 0 0 25px
+        a
+            color: #3cb878
+        a:hover
+            border-bottom: 1px solid #3cb878
+
+.contact
+    display: flex
+    margin: 0 auto
+    &__form
+        display: flex
+        margin: 65px 0 65px 0
+        justify-content: center
+        border-radius: 10px
+        background: #fff
+        width: 444px
+        height: auto
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.52)
+    &__header
+        display: flex
+        flex-direction: column
+        width: 322px
+    &__block
+        display: flex
+        align-items: center
+        margin: 29px 0 15px 0
+        justify-content: space-between
+        a:hover
+            border-bottom: 1px solid #3cb878
+    &__signup
+        color: #434343
+        font-family: Verdana
+        font-size: 20px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: center
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__login
+        color: #3cb878
+        font-family: Verdana
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 20px
+    &__col
+        display: flex
+    &__line
+        width: 1px
+        height: 28px
+        background: #1c1c1b
+        opacity: 0.2
+        margin: 0 10px 0 0
+    &__down
+        display: flex
+        align-items: center
+        width: 322px
+        margin: 12px 0 0 0
+    &__rules
+        margin: 0 0 0 10px
+        a
+            color: #3cb878
+            font-family: Verdana
+            font-size: 14px
+            font-weight: 400
+            font-style: normal
+            letter-spacing: normal
+            line-height: 21px
+            text-align: left
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+            font-style: normal
+            letter-spacing: normal
+            line-height: normal
+        a:hover
+            border-bottom: 1px solid #3cb878
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    &__container input
+        &[type=text],
+        &[type=email],
+        &[type=password]
+            width: 100%
+            padding: 12px
+            border: none
+            outline: none
+            margin: 9px 0
+            border-radius: 4px
+            font-size: 17px
+            line-height: 20px
+            text-decoration: none
+            -webkit-box-shadow: inset 0px 0px 6px -2px #bebebe
+            box-shadow: inset 0px 0px 6px -2px #bebebe
+
+        &[type=checkbox]
+            width: 20px
+            height: 20px
+            box-shadow: 0px 0px 0px 0px #bebebe
+
+    &__container input:focus
+        &[type=text],
+        &[type=email],
+        &[type=password]
+            -webkit-box-shadow: 0px 1px 5px 0px #000000
+            box-shadow: 0px 1px 5px 0px #000000
+            color: #434343
+    &__container input::placeholder
+        color: #bebebe
+        font-family: Verdana
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__container button
+        display: flex
+        align-items: center
+        margin: 28px 0 32px 0
+        justify-content: center
+        background: #3cb878
+        width: 322px
+        height: 46px
+        border: 0px
+        color: #ffffff
+        font-family: Verdana
+        font-size: 16px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__container button:hover
+        background: #36ad70
+.facebook
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 157px
+    height: 46px
+    background-color: #305db8
+    border-radius: 5px
+    margin: 0 5px 0 0
+    color: #ffffff
+    font-family: Verdana
+    font-size: 16px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    line-height: 21px
+    text-align: left
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+    img
+        margin: 0 0 0 8px
+        width: 10px
+        height: 20px
+    &__text
+        margin: 0 10px 0 0 
+
+.google
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 157px
+    height: 46px
+    background-color: #df4a32
+    border-radius: 5px
+    margin: 0 0 0 5px
+    color: #ffffff
+    font-family: Verdana
+    font-size: 16px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    line-height: 21px
+    text-align: left
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+    img
+        margin: 0 0 0 8px
+        width: 25px
+        height: 16px
+    &__text
+        margin: 0 10px 0 0   
+
+.other
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 30px 0
+    &__line
+        margin: 0 18px
+        width: 135px
+        height: 1px
+        background: #bebebe
+
+
+.custom-checkbox 
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.custom-checkbox+label 
+    display: inline-flex
+    align-items: center
+    user-select: none
+    cursor: pointer
+.custom-checkbox+label::before 
+    content: ''
+    display: inline-block
+    width: 1em
+    height: 1em
+    flex-shrink: 0
+    flex-grow: 0
+    border: 1px solid #adb5bd
+    border-radius: 0.25em
+    margin-right: 0.5em
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 50% 50%
+
+.custom-checkbox:checked+label::before 
+    border-color: #0b76ef
+    background-color: #3cb878
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+
+
+        
+    // &__header
+    //     display: flex
+    //     align-items: center
+    //     justify-content: center
+    //     height: 25px
+    //     background: red
+    //     width: 322px
+    //     position: relative
+    //     margin: 29px 0 15px 0
+    // &__shape
+    //     margin: 34px 426px
+    //     z-index: 100
+    //     margin-left: auto
+    //     position: absolute
+    //     background: #3cb878
+    //     width: 18px
+    //     height: 18px
+    // &__signup
+    //     color: #434343
+    //     font-family: Verdana
+    //     font-size: 20px
+    //     font-weight: 400
+    //     font-style: normal
+    //     letter-spacing: normal
+    //     line-height: 21px
+    //     text-align: center
+    //     font-style: normal
+    //     letter-spacing: normal
+    //     line-height: normal
+    // &__login
+    //     margin-left: auto
+    //     font-family: Verdana
+    //     font-size: 14px
+    //     font-weight: 400
+    //     font-style: normal
+    //     letter-spacing: normal
+    //     line-height: 19px
+    //     text-align: left
+    //     color: #3cb878
+    //     &:hover
+    //         border-bottom: 1px solid #3cb878
+    // &__block
+    //     display: flex
+    //     align-items: center
+    //     justify-content: center
+    //     background: blue
+    //     position: absolute
+    //     width: 444px
+    //     background: blue
+    // &__col
+    //     width: 322px
+
+
+
+// .footer
+//     max-width: 1280px
+//     margin: 0 auto
+//     padding: 15px 0 0 0
+//     &__item
+//         width: 1280px
+//     &__menu
+//         max-width: 1280px
+//         display: flex
+//         align-items: center
+//         padding: 0 24px
+//         min-height: 69px
+//         background-color: rgba(99, 105, 110, 0.48)
+//         li
+//             padding: 0 20px
+//             a
+//                 color: #0c1927
+//                 font-family: 'Myriad Pro' sans-serif
+//                 font-size: 24px
+//                 font-weight: 400
+//             a:hover
+//                 border-bottom: 1px solid #3181a6
+//                 color: #3181a6
+//     &__icons
+//         margin-left: auto
+//         h1
+//             font-family: 'Myriad Pro' sans-serif
+//             font-size: 24px
+//             color: #010101

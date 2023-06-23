@@ -1,0 +1,239 @@
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+ul
+    ol
+    li
+            list-style: none
+
+html
+    body
+        font-family: 'Myriad Pro', sans-serif
+        background: url(../img/background1.png) no-repeat
+        background-size: cover
+
+button
+    cursor: pointer
+    
+img
+    vertical-align: top
+
+@mixin flex-center
+    display: flex   
+    align-items: center
+    justify-content: center
+ 
+.promo
+    padding: 49px 0 48px 0
+
+.container
+    max-width: 1064px
+    margin: 0 auto
+
+.header
+    display: flex
+    justify-content: center
+    justify-content: space-between
+    height: 45px
+    &__logo
+        display: flex
+        img
+            width: 48px
+            height: 46px
+        :hover
+            color: #f26522
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        color: #ffffff
+    &__text-up
+        padding: 0 0 0 15px
+        font-family: Verdana
+        font-size: 29px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        text-transform: uppercase
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__text-down
+        padding: 0 0 0 15px
+        font-family: Verdana
+        font-size: 18px
+        font-weight: 700
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        text-transform: uppercase
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__contacts
+        display: flex
+        flex-direction: column
+        justify-content: center
+        color: #ffffff
+        font-family: Verdana
+        font-size: 18px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        cursor: pointer
+        :hover
+            color: #f26522
+    &__phone
+        margin-left: auto
+        color: #ffffff
+        font-family: Verdana
+        font-size: 18px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        cursor: pointer
+
+.pictures
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0 58px
+    &__wrapper
+        width: 1064px
+        height: 541px 
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+    &__images
+        width: 311px
+        height: 204px
+        box-shadow: 0 17px 24px #000000
+        border: 2px solid #fdfdfd
+        background-color: #ffffff
+    &__images:hover .pictures__overlay
+            visibility: visible
+    &__item
+        margin: 0 0 0 0 
+        width: 308px
+        height: 200px
+        position: relative
+    &__item-center 
+        width: 308px
+        height: 200px
+        position: relative
+    &__overlay
+        position: absolute
+        margin: 137px 0
+        flex-direction: column
+        visibility: hidden
+    &__block
+        justify-content: space-between
+        display: flex
+        align-items: center
+        width: 307px
+        height: 63px
+        background: #f26522
+    &__descr
+        padding: 0 10px 0 0
+        color: #ffffff
+        font-family: Verdana
+        font-size: 10px
+        font-weight: 400
+    &__cost
+        color: #ffffff
+        font-family: Verdana
+        font-size: 20px
+        font-weight: 400
+    &__link-left
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: flex-start
+        cursor: pointer
+        padding: 0 0 0 15px
+    &__link
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        cursor: pointer
+    &__head
+        padding: 20px 15px 0 0
+        color: #ffffff
+        font-family: Verdana
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__arrow
+        display: flex
+        align-items: center
+        margin: 20px 18px 0 0
+        width: 7px
+        height: 10px
+        opacity: 0.5   
+    &__item-left
+        margin-right: auto
+        padding: 0 0 58px 0
+    &__item-right
+        margin-left: auto
+        padding: 0 0 58px 0
+    &__text
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #ffffff
+        font-family: Verdana
+        font-size: 18px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: center
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        padding: 20px 76px 0px 76px
+        white-space: nowrap
+
+.footer
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 60px 0 90px 0
+    height: 30px
+    &__item
+    &__text
+        color: #ffffff
+        font-family: Verdana
+        font-size: 12px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 21px
+        text-align: center
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal

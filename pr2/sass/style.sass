@@ -1,0 +1,169 @@
+* 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+ul
+    ol
+    li
+            list-style: none
+
+html
+    body
+        font-family: 'Myriad Pro', sans-serif
+
+button
+    cursor: pointer
+    
+img
+    vertical-align: top
+
+@mixin flex-center
+    display: flex   
+    align-items: center
+    justify-content: center
+ 
+.container
+    max-width: 1280px
+    margin: 0 auto
+    
+.header
+    max-width: 1280px
+    min-height: 188px
+    padding: 61px 0 0 0
+    &__logo
+        width: 292px
+        height: 74px
+        font-family: 'Myriad Pro' sans-serif
+        font-size: 80px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+        text-align: center
+        color: #000000
+        span
+            font-style: normal
+            color: #4bcaff
+    &__block
+    &__menu
+        max-width: 1280px
+        margin: 45px 0 51px 0
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 69px
+        background-color: #35444f
+        li
+            a
+                padding:  20px 42px
+                height: 22px
+                color: #ffffff
+                font-family: 'Myriad Pro' sans-serif
+                font-size: 24px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal
+            a:hover
+                background: #222f3a
+                border-left: 1px solid #828282
+                border-right: 1px solid #828282
+
+.wrapper
+    display: flex
+    max-width: 1280px
+    margin: 0 auto
+
+.content
+    display: flex
+    align-items: center
+    &__block
+        margin: 0 0 0 52px
+    &__container
+        width: 882px
+        height: 529px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid black
+    &__images
+        width: 320px
+        height: 381px
+    &__text
+        color: #2c2c2c
+        font-family: 'Myriad Pro' sans-serif
+        font-size: 18px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 24px
+        text-align: left
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &__text-first
+        margin: 50px 40px 30px 30px
+        text-align: justify
+    &__text-second
+        margin: 30px 40px 30px 30px
+        text-align: justify
+        
+.aside
+    &__left
+        width: 346px
+        height: auto
+        border: 1px solid #29424e
+        li
+            padding: 26px 44px
+            a
+                width: 100px
+                height: 19px
+                color: #485863
+                font-family: 'Myriad Pro' sans-serif
+                font-size: 27px
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 80px
+                text-align: left
+                font-style: normal
+                letter-spacing: normal
+                line-height: normal
+        li:hover
+            background: #dbdbdb
+            cursor: pointer
+            padding: 26px 69px
+
+.footer
+    max-width: 1280px
+    margin: 0 auto
+    padding: 15px 0 0 0
+    &__item
+        width: 1280px
+    &__menu
+        max-width: 1280px
+        display: flex
+        align-items: center
+        padding: 0 24px
+        min-height: 69px
+        background-color: rgba(99, 105, 110, 0.48)
+        li
+            padding: 0 20px
+            a
+                color: #0c1927
+                font-family: 'Myriad Pro' sans-serif
+                font-size: 24px
+                font-weight: 400
+            a:hover
+                border-bottom: 1px solid #3181a6
+                color: #3181a6
+    &__icons
+        margin-left: auto
+        h1
+            font-family: 'Myriad Pro' sans-serif
+            font-size: 24px
+            color: #010101
