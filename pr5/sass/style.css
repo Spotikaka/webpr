@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Arimo";
+  src: url("../fonts/Arimo.ttf");
+}
+.container {
+  background: #3a4965;
+  width: 1192px;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1;
+  background: #e3e3e3;
+  width: 1140px;
+  height: 682px;
+  margin: 0 22px 0px 22px;
+}
+table th {
+  background: #fafafa;
+}
+table td {
+  text-align: center;
+  color: #484848;
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+table img {
+  margin: -4px 10px;
+}
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
+.chart {
+  color: #484848;
+  font-family: Arimo;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.chart span {
+  color: #484848;
+  font-family: Arimo;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.first {
+  width: 277px;
+  height: 70px;
+  background-color: #89c331;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.first__head {
+  background: #fafafa;
+  height: 86px;
+}
+.first__block {
+  display: flex;
+  justify-content: center;
+}
+.first__money {
+  display: flex;
+  align-items: center;
+  color: #484848;
+  font-family: Arimo;
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.first__text {
+  display: flex;
+  flex-direction: column;
+  color: #484848;
+  font-family: Arimo;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.first__coin {
+  display: flex;
+}
+.first__descr {
+  display: flex;
+  color: #484848;
+  font-family: Arimo;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.second {
+  width: 277px;
+  height: 70px;
+  background-color: #f04a56;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.second__head {
+  background: #fafafa;
+}
+
+.three {
+  width: 277px;
+  height: 70px;
+  background-color: #20807c;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.three__head {
+  background: #fafafa;
+  height: 50px;
+}
+
+button {
+  width: 192px;
+  height: 49px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arimo;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 7px;
+  border: none;
+}
+button:hover {
+  padding: 4px 0 0 0;
+}
+
+.grey-button {
+  background-color: #484848;
+  border-bottom: 7px solid #404040;
+}
+
+.green-button {
+  background-color: #89c331;
+  border-bottom: 7px solid #79b027;
+}
+
+.red-button {
+  background-color: #f04a56;
+  border-bottom: 7px solid #df3a46;
+}
+
+.turquoise-button {
+  background-color: #20807c;
+  border-bottom: 7px solid #16736f;
+}/*# sourceMappingURL=style.css.map */
